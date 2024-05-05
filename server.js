@@ -52,7 +52,7 @@ app.get('/records', (req, res) => {
         .then(records => {
             res.json(records);
              
-            console.log(records);
+            //console.log(records);
             console.log("this error",res.json(records));
         })
         .catch(err => {
