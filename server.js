@@ -51,6 +51,9 @@ app.get('/records', (req, res) => {
     Record.find({})
         .then(records => {
             res.json(records);
+             
+            console.log(records);
+            console.log("this error",res.json(records));
         })
         .catch(err => {
             console.error(err);
